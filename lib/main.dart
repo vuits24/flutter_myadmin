@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     Upgrader().clearSavedSettings();
     final appcastURL =
-        'https://github.com/vuits24/flutter_myadmin/blob/main/appcast.xml';
+        'https://raw.githubusercontent.com/vuits24/flutter_myadmin/main/appcast.xml';
     final cfg = AppcastConfiguration(url: appcastURL, supportedOS: ['android']);
 
     return MaterialApp(
