@@ -13,25 +13,6 @@ class MyWeb extends StatefulWidget {
 class _MyWebState extends State<MyWeb> {
   WebViewPlusController _controller;
 
-  JavascriptChannel _javascriptChannel(BuildContext context) {
-    return JavascriptChannel(
-        name: 'tfl.mobile',
-        onMessageReceived: (JavascriptMessage msg) {
-          print(msg.message);
-          // Map mymap = jsonDecode(msg.message);
-          // switch (mymap["type"]) {
-          //   case "init":
-          //     this._controller.loadUrl(mymap["data"]);
-          //     break;
-          //   case "exec":
-          //     this._controller.evaluateJavascript(mymap["data"]);
-          //     break;
-          //   default:
-          //     this._controller.evaluateJavascript(mymap["data"]);
-          // }
-        });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
